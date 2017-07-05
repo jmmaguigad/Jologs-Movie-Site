@@ -5,7 +5,7 @@ Logs/Scripts/Changes for Jologs Movie Site
 1. Notes Section
 2. Logs Section Here
 
-1.Notes Section Here
+1. Notes Section Here
 a. Theme used is Videoblog, which is being customize and enhance.
 
 
