@@ -28,6 +28,35 @@
   ga('send', 'pageview');
 
 </script>   
+<style type="text/css">
+	
+/*Custom CSS*/
+.site-header {background-color:#f9f9f9;}
+#site-main{margin-top:-20px;}
+.shareaholic-dis-ad-col-3 {display:none;!important;}
+/*dagdag 06-27-2017*/
+.ilovewp-page-inner {margin:0;padding-bottom:5px;border:none;}
+.ilovewp-page-intro .title-page {font-size:20px;font-weight:500;text-align:left;}
+/*end ng dagdag*/
+p.site-title {color:#000!important;}
+p.site-description: {color:#000!important;}
+#menu-main {bac}
+.fb-like {margin-top:5px;}
+.post-single {line-height:1.85em!important;}
+.post-single p {line-height:25px;}
+.post-single h3 {font-size:17px;font-weight:bold;margin:1em 0 0.5em!important;}
+#site-content { width:100%!important; }
+.ilovewp-posts-archive .post-cover {margin-bottom:0!important;}
+.widget_search .search-field {margin-bottom:0px!important;width:45%;}
+.post-preview span.post-meta-category,.post-meta span.posted-on,header p.post-meta,.copy-ilovewp {
+	display:none;
+}
+.post-cover-wrapper img {
+	border:3px solid #dedede;
+}
+input.search-submit {padding:11px;margin-left:-3px!important;font-size:15px!important;}	
+
+</style>	
 </head>
 
 <body <?php body_class(); ?>>
