@@ -557,11 +557,11 @@ add_filter('language_attributes', 'add_opengraph_doctype');
 
 function insert_fb_in_head() {
 	global $post;
+	$default_image="https://jologs.com/wp-content/uploads/2017/07/jologs_movie_site.jpg";
 	if ( !is_singular()) { //if it is not a post or a page
 		echo '<meta name="description" content="Jologs Movie Site - Watch Free Openload Movies in High Quality. Definitely HD, fast and easy with free download link.">';
 		echo '<meta name="keywords" content="jologs film, movie film, jologs movie, jologs in english, jologs words, ano ang jologs, jologs full movie, jologs movie watch online, jologs meaning">';
-	} else {
-        $default_image="https://jologs.com/wp-content/uploads/2017/07/jologs_movie_site.jpg";
+	} else {        
         $custom = get_post_custom();            
         //echo '<meta property="fb:admins" content="YOUR USER ID"/>';
         echo '<meta name="description" content="'.get_the_title().' Story and Plot: '.$custom["video_description"][0].'"/>';
@@ -586,7 +586,7 @@ function insert_fb_in_head() {
         echo '<meta property="og:title" content="' . get_the_title() . ' | Jologs Movie Site"/>';
         echo '<meta property="og:type" content="article"/>';
         echo '<meta property="og:url" content="' . get_permalink() . '"/>';
-        echo '<meta property="og:site_name" content="http://jologs.com/jologsmoviesite"/>';
+        echo '<meta property="og:site_name" content="https://jologs.com"/>';
         echo '<meta property="og:description" content="Jologs Movie Site, home of HD and Clear Copy Filipino and American Movies"/>';
         echo '<meta property="og:image" content="' . $default_image . '"/>';
     }
