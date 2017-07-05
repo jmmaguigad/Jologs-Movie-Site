@@ -9,7 +9,15 @@ get_header(); ?>
 			<main id="site-content" class="site-main" role="main">
 			
 				<div class="site-content-wrapper clearfix">
-                    <?php dynamic_sidebar( 'sidebar-main' ); ?>
+                    			<!-- Custom Search -->
+					<div class="widget widget_search">
+						<form role="search" class="search-form" action="<?php echo site_url('/'); ?>" method="get" id="searchform">
+						    <input type="text" class="search-field" name="s" placeholder="Search Movies"/>
+						    <input type="hidden" name="post_type" value="jologs_movie" />
+						    <input type="submit" class="search-submit" alt="Search" value="Search" />
+					  	</form>                    	
+                    			</div>
+                    			<!-- End of Custom Search -->                   
 					<?php if ( is_home() || is_front_page() ) : ?>
 						<header>
 							<h1 class="page-title screen-reader-text"><?php single_post_title(); ?></h1>
