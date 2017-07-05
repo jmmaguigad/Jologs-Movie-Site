@@ -561,7 +561,7 @@ function insert_fb_in_head() {
 		echo '<meta name="description" content="Jologs Movie Site - Watch Free Openload Movies in High Quality. Definitely HD, fast and easy with free download link.">';
 		echo '<meta name="keywords" content="jologs film, movie film, jologs movie, jologs in english, jologs words, ano ang jologs, jologs full movie, jologs movie watch online, jologs meaning">';
 	} else {
-        $default_image="https://jologs.com/jologsmoviesite/wp-content/uploads/2017/03/Screenshot_10.jpg";
+        $default_image="https://jologs.com/wp-content/uploads/2017/07/jologs_movie_site.jpg";
         $custom = get_post_custom();            
         //echo '<meta property="fb:admins" content="YOUR USER ID"/>';
         echo '<meta name="description" content="'.get_the_title().' Story and Plot: '.$custom["video_description"][0].'"/>';
@@ -569,7 +569,7 @@ function insert_fb_in_head() {
         echo '<meta property="og:title" content="' . get_the_title() . ' (' . $custom["year_shown"][0].') | Jologs Movie Site"/>';
         echo '<meta property="og:type" content="video.movie"/>';
         echo '<meta property="og:url" content="' . get_permalink() . '"/>';
-        echo '<meta property="og:site_name" content="http://jologs.com/jologsmoviesite"/>';
+        echo '<meta property="og:site_name" content="https://jologs.com"/>';
         echo '<meta property="og:description" content="'.$custom["video_description"][0].'"/>';
 	}
 	if(!has_post_thumbnail( $post->ID )) { //the post does not have featured image, use a default image
