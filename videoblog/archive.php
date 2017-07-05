@@ -56,10 +56,13 @@ get_header(); ?>
 					</ul><!-- .ilovewp-posts .ilovewp-posts-archive -->
 		
 					<?php 
-					//$args['prev_text'] = '<span class="nav-link-label"><span class="genericon genericon-previous"></span></span>' . __('Older Posts', 'videoblog');
-					//$args['next_text'] = __('Newer Posts', 'videoblog') . '<span class="nav-link-label"><span class="genericon genericon-next"></span></span>';
-					//the_posts_navigation($args); ?>
-		
+						if (!isset($_GET['s'])) {
+							$args['prev_text'] = '<span class="nav-link-label"><span class="genericon genericon-previous"></span></span>' . __('Older Posts', 'videoblog');
+							$args['next_text'] = __('Newer Posts', 'videoblog') . '<span class="nav-link-label"><span class="genericon genericon-next"></span></span>';
+							the_posts_navigation($args); 
+						}
+					?>
+					
 				<?php else : ?>
 		
 					<?php get_template_part( 'template-parts/content', 'none' ); ?>
